@@ -1,0 +1,54 @@
+.navbar .nav-item .nav-link {
+    margin-left: 20px;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: #0DCAF0;
+}
+
+form textarea {
+    resize: none;
+}
+
+.table.dataTable.no-footer {
+    border-bottom: 0;
+}
+
+.table thead th, .table tbody td, .table tbody th {
+    border-color: #d9d9d9;
+}
+
+.table tr:last-child {
+    border: 0;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-top: 1px solid #d9d9d9;
+    border-color: #d9d9d9;
+}
+
+.dataTables_length {
+    margin-bottom: 25px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #787878;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus-visible {
+    outline: none;
+}
+
+.dataTables_paginate, .dataTables_info {
+    margin-top: 20px;
+}
+
+.about-us img, .contact-us img {
+    height: 350px;
+    object-fit: cover;
+}
