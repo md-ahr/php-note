@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get latest code
-        uses: action/checkout@master
+        uses: actions/checkout@master
 
       - name: file upload to server
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
