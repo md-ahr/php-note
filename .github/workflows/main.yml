@@ -1,0 +1,17 @@
+on: push
+
+name: deploy website on push
+jobs:
+  web-deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: get latest code
+        uses: action/checkout@master
+
+      - name: file upload to server
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ftp.iamhalim.com
+          username: note@iamhalim.com
+          password: ${{ secrets.NOTE_FTP_KEY }}
